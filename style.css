@@ -1,0 +1,173 @@
+body{
+  background-color:#C42627;
+  font-family: 'Bebas Nue', sans-serif;
+  line-height: 1;
+  text-emphasis-color: #fff;
+  
+  
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+
+.logo{
+  text-align: center;
+  background-color: black;
+  padding: 20px 0;
+}
+
+.bleach-logo{
+  max-width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  height: 110px;
+  display: flex;
+  align-items: center;
+}
+
+.top-logo{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.top-nav{
+  background-color: black;
+  position: sticky;
+  top:0;
+  z-index: 100;
+}
+
+.container-nav{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.item{
+  position: relative;
+}
+
+.item a{
+  display: block;
+  letter-spacing: 1;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  padding: 20px 25px;
+  color: azure;
+  font-family: 'Bebas Nue', sans-serif;
+}
+
+.item a:hover{
+  color: #C42627;
+}
+
+
+.list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.landing-img{
+  width: 600px;
+  margin-left: 278px;
+}
+
+.h{
+  height:80vh;
+  background-size: 150vh;
+  background-color: black;
+  background-image: url(images/home.gif);
+  filter: grayscale(10%) contrast(1.4) saturate(1.4) brightness(0.7);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.h-content{
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  padding: 0 20px;
+}
+ 
+.h h1{
+      font-size: 4rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #C42627;
+     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6)
+}
+
+.h p{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.title{
+  font-size: 4rem;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 0.2px;
+    margin-top: 34px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    background-color: black;
+    width: 170px;
+
+}
+
+
+.aboutpart{
+  background-color: #C42627;
+}
+
+.a-content{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.a-text{
+  flex: 1;
+}
+
+.a-text p{
+  line-height: 1.5;
+  font-size: 1.1rem;
+  color: #ffffff;
+  background-color: black;
+}
+
+.a-image {
+    flex: 1;
+}
+
+.a-image img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+

@@ -1,0 +1,45 @@
+body{background-color: #0399F8;
+      margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.bleach-logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 200vh;
+
+}
+
+.black-box{
+    background-color: black;
+    padding: 7px;
+    display: inline-block;
+    animation: fadeIn 0.5s ease;
+    display: inline-block;
+}
+
+  .top-image {
+  width: 150px; /* or whatever size you need */
+  animation: fadeIn 1.5s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(10px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}

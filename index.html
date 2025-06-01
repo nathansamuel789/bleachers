@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLEACH - Thousand Year Blood War</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script>
+  const auth = firebase.auth();
+
+  auth.onAuthStateChanged(user => {
+    if (!user) {
+      window.location.href = "login.html";
+    }
+  });
+
+  function logout() {
+    auth.signOut().then(() => {
+      window.location.href = "login.html";
+    });
+  }
+</script>
+<body>
+  <header class="logo">
+   <div class="bleach-logo">
+     <img src="images/dying hereeee.png" alt="bleach logo" class="top-logo">
+   </div>
+  </header>
+
+  <nav class="top-nav">
+    <div class="container-nav">
+      <ul class="list">
+        <li class="item"><a href="#home">Home</a></li>
+        <li class="item"><a href="#about">About</a></li>
+        <li class="item"><a href="episodes.html">Episodes</a></li>
+        <li class="item"><a href="characters.html">Character Search</a></li>
+      </ul>
+    </div> 
+     <button onclick="logout()">Logout</button>
+
+  </nav>
+
+  <div>
+    <img src="images/meblade.png" alt="landing" class="landing-img">
+  </div>
+
+
+ <main>
+  <section class="homepart" id="home">
+    <div class="h">
+      <div class="h-content">
+        <h1>BLEACH</h1>
+        <h1>Thousand Year Blood War</h1>
+        <p>The epic saga continues with the final arc of Tite Kubo's master piece</p>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="aboutpart" id="about">
+    <div class="container">
+      <h1 class="title">ABOUT</h1>
+      <div class="a-content">
+        <div class="a-text">
+          <p>BLEACH: Thousand Year Blood War is a follow 
+            up to the original Bleach (2004), akin to InuYasha: The Final Act (2009). 
+            It will be completing the series' anime adaptation by
+            bringing the remainder of the manga chapters-that being the final arc-to the screen, 
+            which the original anime did not adapt. 
+            The Japanese cast from the earlier
+            seasons return for the finale</p>
+
+            <p>The peace is suddenly broken when warning sirens 
+              blare through the Soul Society.
+              Residents are disappearing without a trace and nobody knows who's behind it. 
+              Meanwhile, a darkness is approaching Ichigo and his friends in Karakura Town.</p>
+        </div>
+        <div class="a-image">
+          <img src="images/about.avif">
+        </div>
+      </div>
+
+    </div>
+  </section>
+ </main>
+
+  
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - Bleach TYBW</title>
+  <link rel="stylesheet" href="login.css">
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="login.js" defer></script>
+</head>
+<body>
+
+     <header class="logo">
+   <div class="bleach-logo">
+     <img src="images/dying hereeee.png" alt="bleach logo" class="top-logo">
+   </div>
+  </header>
+
+    <h2>LOGIN TO BLEACHERS</h2>
+ <div class="box">
+    <input id="email" type="email" placeholder="Email"><br>
+    <input id="password" type="password" placeholder="Password"><br>
+    <button onclick="login()">LOGIN</button>
+    <button onclick="register()">REGISTER</button>
+    <p id="msg"></p>
+ </div>
+
+  
+</body>
+</html>

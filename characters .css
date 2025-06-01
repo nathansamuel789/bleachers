@@ -1,0 +1,111 @@
+body{
+  background-color:#C42627;
+  font-family: 'Bebas Nue', sans-serif;
+  line-height: 1;
+  text-emphasis-color: #fff;
+  
+  
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+
+.logo{
+  text-align: center;
+  background-color: black;
+  padding: 20px 0;
+}
+
+.bleach-logo{
+  max-width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  height: 110px;
+  display: flex;
+  align-items: center;
+}
+
+.top-logo{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.top-nav{
+  background-color: black;
+  position: sticky;
+  top:0;
+  z-index: 100;
+}
+
+.container-nav{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.item{
+  position: relative;
+}
+
+.item a{
+  display: block;
+  letter-spacing: 1;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  padding: 20px 25px;
+  color: azure;
+  font-family: 'Bebas Nue', sans-serif;
+}
+
+.item a:hover{
+  color: #C42627;
+}
+
+
+.list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+body {
+  background-color: #c62828;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.header {
+  background-color: black;
+  padding: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+input{
+    margin: 20px 10px;
+    padding: 5px;
+    border-radius: 12px;
+    border: #C42627;
+}
+
+button{
+    border-top-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 80px;
+}
