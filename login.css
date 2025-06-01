@@ -1,5 +1,5 @@
 body{
-  background-color:#C42627;
+  background-color:#000000;
   font-family: 'Bebas Nue', sans-serif;
   line-height: 1;
   text-emphasis-color: #fff;
@@ -9,7 +9,7 @@ body{
 
 .logo{
   text-align: center;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(0, 0, 0);
   padding: 20px 0;
 }
 
