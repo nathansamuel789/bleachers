@@ -1,8 +1,9 @@
+@import url(https://db.onlinewebfonts.com/c/39a2c7f346d5cfae7045aeb2fb50d9ad?family=Lulo+Clean+W01+One+Bold);
 body{
   background-color:#C42627;
-  font-family: 'Bebas Nue', sans-serif;
   line-height: 1;
   text-emphasis-color: #fff;
+  font-family: "Lulo Clean W01 One Bold";
   
   
 }
@@ -31,13 +32,31 @@ html{
   height: 110px;
   display: flex;
   align-items: center;
+  animation: bounceIn 1.5s ease;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: translateY(0px) scale(0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(2px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0) scale();
+  }
 }
 
 .top-logo{
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+ 
 }
+
+
 
 .top-nav{
   background-color: black;
@@ -68,7 +87,7 @@ html{
   transition: color 0.3s;
   padding: 20px 25px;
   color: azure;
-  font-family: 'Bebas Nue', sans-serif;
+  
 }
 
 .item a:hover{
@@ -80,11 +99,18 @@ html{
     display: flex;
     list-style: none;
     padding: 0;
+    animation: slideUp 1.5s ease
 }
 
 .landing-img{
   width: 600px;
   margin-left: 278px;
+  animation: slideUp 1.5s ease
+}
+
+@keyframes slideUp {
+  from { transform: translateY(10px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
 }
 
 .h{
@@ -100,7 +126,7 @@ html{
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
 }
 
 .h-content{
@@ -111,17 +137,19 @@ html{
 }
  
 .h h1{
-      font-size: 4rem;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 5rem;
+    font-family: "Lulo Clean W01 One Bold";
     letter-spacing: 3px;
     margin-bottom: 10px;
     text-transform: uppercase;
     color: #C42627;
-     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6)
+     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+     animation: slideUp 1.5s ease
+     
 }
 
 .h p{
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family: "Lulo Clean W01 One Bold";
 }
 
 .title{

@@ -1,10 +1,9 @@
+@import url(https://db.onlinewebfonts.com/c/39a2c7f346d5cfae7045aeb2fb50d9ad?family=Lulo+Clean+W01+One+Bold);
 body{
-  background-image: url(images/slice.jpg);
-  font-family: 'Bebas Nue', sans-serif;
+  background-color:#C42627;
   line-height: 1;
-  background-repeat: no-repeat;
-  background-size: 230vh;
- 
+  text-emphasis-color: #fff;
+  font-family: "Lulo Clean W01 One Bold";
   
   
 }
@@ -33,16 +32,34 @@ html{
   height: 110px;
   display: flex;
   align-items: center;
+  animation: bounceIn 1.5s ease;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: translateY(0px) scale(0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(2px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0) scale();
+  }
 }
 
 .top-logo{
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+ 
 }
 
+
+
 .top-nav{
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   position: sticky;
   top:0;
   z-index: 100;
@@ -70,7 +87,7 @@ html{
   transition: color 0.3s;
   padding: 20px 25px;
   color: azure;
-  font-family: 'Bebas Nue', sans-serif;
+  
 }
 
 .item a:hover{
@@ -82,12 +99,13 @@ html{
     display: flex;
     list-style: none;
     padding: 0;
+    animation: slideUp 1.5s ease
 }
-
 
 h1{
     text-align: center;
     color: rgb(255, 255, 255) ;
+    padding-top: 12px;
 }
 
 .grid{
@@ -109,14 +127,17 @@ h1{
 .row{
     display: flex;
     gap: 20px;
+    padding-top: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 
 .episode{
     width: 200px;
     overflow: hidden;
     transition: transform 0.2s ease;
+    
 
 }
 
@@ -127,8 +148,46 @@ h1{
 
 .titles{
     text-align: center;
-    padding: px;
+    background-color: rgb(0, 0, 0);
+    padding: 3.7%;
+    font-size: 14px;
+    color: azure;
+    
+    
+}
+
+.titles-k{
+    text-align: center;
+    padding: 3.7%;
     background-color: rgb(0, 0, 0);
     font-size: 14px;
     color: azure;
+    
+}
+
+.titles-f{
+    text-align: center;
+    padding: 7%;
+    background-color: rgb(0, 0, 0);
+    font-size: 14px;
+    color: azure;
+    
+}
+
+.titles-d{
+    text-align: center;
+    padding: 7%;
+    background-color: rgb(0, 0, 0);
+    font-size: 14px;
+    color: azure;
+    
+}
+
+.titles-b{
+    text-align: center;
+    padding: 7%;
+    background-color: rgb(0, 0, 0);
+    font-size: 14px;
+    color: azure;
+    
 }

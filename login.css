@@ -1,15 +1,20 @@
+@import url(https://db.onlinewebfonts.com/c/39a2c7f346d5cfae7045aeb2fb50d9ad?family=Lulo+Clean+W01+One+Bold);
+
 body{
-  background-color:#000000;
-  font-family: 'Bebas Nue', sans-serif;
+  background-color:#C42627;
   line-height: 1;
   text-emphasis-color: #fff;
   
   
 }
 
+
+
+
+
 .logo{
   text-align: center;
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   padding: 20px 0;
 }
 
@@ -48,4 +53,5 @@ button{
 
 h2{
     text-align: center;
+    font-family: "Lulo Clean W01 One Bold";
 }
